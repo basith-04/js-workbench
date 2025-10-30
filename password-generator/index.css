@@ -1,0 +1,56 @@
+body{
+    background-color:#1F2937 ;
+    padding-left: 20px;
+    font-family: "karla";
+    padding-top: 50px;
+}
+h2{
+    font-weight: bold;
+    margin: 0;
+    
+}
+#title1{
+    color: white;
+
+}
+#title2{
+    color: #10B981;
+    
+}
+#para{
+    color: #D5D4D8;
+}
+button{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background-color: #10B981;
+    border-radius: 6px;
+    border: none;
+    height: 35px;
+    font-family: "karla";
+    font-weight: bold;
+    color: white;
+    
+}
+hr{
+   
+    
+    border: 1px solid #2F3E53;
+}
+.result{
+    display: inline;
+    height: 35px;
+    background-color: #273549;
+    width:211px;
+    padding:5px 15px 
+
+}
+#pass1{
+    display: inline;
+}
+#pass2{
+    display: inline;
+}
+p{
+    color: #10B981;
+}

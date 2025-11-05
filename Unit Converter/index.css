@@ -1,0 +1,74 @@
+body {
+    font-family: 'Inter';
+}
+
+
+
+input {
+    background-color: #6943FF;
+    width: 117px;
+    height: 83px;
+    border-radius: 5px;
+    border: 2px solid #B295FF;
+
+}
+
+button {
+    width: 117px;
+    height: 42px;
+    border: 0px none white;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.first-div {
+    width: 550px;
+    height: 285px;
+    background-color: #6943FF;
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+
+}
+
+.second-div {
+    background-color: #F4F4F4;
+    width: 550px;
+    height: 459px;
+    padding: 40px;
+    box-sizing: border-box;
+
+}
+
+.result {
+
+    padding-top:5px ;
+    height: 108px;
+    background-color: white;
+    margin-bottom: 30px;
+    text-align: center;
+
+}
+
+.result-title {
+    font-family: Inter;
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 20px;
+    color: #5A537B;
+    
+}
+.results{
+    font-size: 14px;
+    color: #353535;
+}
+
+#title {
+
+    font-weight: 800;
+    font-style: bold;
+    font-size: 28px;
+
+
+}

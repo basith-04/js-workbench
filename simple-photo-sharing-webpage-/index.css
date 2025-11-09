@@ -1,5 +1,112 @@
 html, body {
     margin: 0;
     padding: 0;
+    font-family: "Source Sans 3";
+    
 }
 
+.webpage-header{
+    display: flex;
+    width: 375px;
+    height:67px;
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #C6C6C6;
+    
+}
+.post-header{
+    
+    
+    padding: 10px;
+    box-sizing: border-box;
+    
+}
+.post-header-div{
+    height:34px;
+    display: inline;
+   padding-bottom: 40px;
+    width: 300px;
+
+}
+p{
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    
+}
+
+.post-profile{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
+}
+.post-img{
+    height:375px;
+    width: 375px;
+}
+main{
+    width: 375px;
+    height: 1767px;
+    
+}
+#oldagram{
+    width: 127px;
+    height: 45px;
+    
+}
+#user-img{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    
+}
+.post-header-text{
+    padding-top: 4px;
+    line-height: 15px;
+}
+.post-content{
+    height: 115px;
+    
+}
+button{
+    background:none;
+    border: none;
+}
+li img{
+    height: 25px;
+    
+    
+}
+li img:hover{
+    padding-top: 5px;
+    box-sizing: border-box;
+    
+}
+
+ul{
+    margin: 0;
+    padding: 20px 15px;
+    height: 40px;
+    list-style: none;
+    box-sizing: border-box;
+    
+
+}
+li{
+    float: left;
+    margin-right: 10px;
+}
+.likes{
+    display: block;
+    clear: both;
+    margin-left: 15px;
+}
+.post-description{
+    margin-left: 15px;
+}
+span{
+    font-weight: bold;
+}

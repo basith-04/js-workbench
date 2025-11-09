@@ -27,3 +27,32 @@ const posts = [
         likes: 152
     }
 ]
+let str=""
+const mainEl=document.getElementById("main-el")
+for(let i=0;i<posts.length;i++)
+{
+    str +=`
+        <section class="post">
+            <header class="post-header"><img src="${posts[i].avatar}" class="post-profile"><div class="post-header-div">
+                <p class="post-header-text">  <span>${posts[i].name}</span> <br> ${posts[i].location}</p>
+
+            </div>
+            </header>
+            <img src="${posts[i].post}" class="post-img">
+            <div class="post-content">
+                 <ul>
+                <li><button><img src="images/icon-heart.png"></button></li>
+                <li><img src="images/icon-comment.png"></li>
+                <li><img src="images/icon-dm.png"></li>
+            </ul>
+            <p class="likes" id="like">${posts[i].likes} likes</p>
+            <p class="post-description"><span>${posts[i].username}</span> ${posts[i].comment}</p>
+            </div>
+           
+        </section>
+    
+    
+    `
+}
+mainEl.innerHTML=str
+

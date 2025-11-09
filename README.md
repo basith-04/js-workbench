@@ -1,6 +1,11 @@
 #  js-workbench
 
+<<<<<<< HEAD
 Mini projects, practice assignments, and experiments ** I built while learning JavaScript and full-stack development**.  
+=======
+A collection of **mini projects, practice assignments, and experiments** I built while learning **JavaScript and full-stack development**.  
+Each folder inside this repository focuses on specific JS concepts — from DOM manipulation and event handling to game logic and dynamic rendering.
+>>>>>>> 46d14e56287bed55e68e40ac87a6976ce27fdf68
 
 ---
 

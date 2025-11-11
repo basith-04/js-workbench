@@ -16,6 +16,7 @@ Mini projects, practice assignments, and experiments ** I built while learning J
 |  [**score-counter**](https://github.com/basith-04/js-workbench/tree/main/score-counter) | A mini score tracker demonstrating DOM events and live updates. |
 |  [**simple-personal-web**](https://github.com/basith-04/js-workbench/tree/main/simple-personal-web) | My simple personal webpage built using HTML, CSS, and JS. |
 |  [**simple-photo-sharing-webpage**](https://github.com/basith-04/js-workbench/tree/main/simple-photo-sharing-webpage-) | A basic photo-sharing webpage with dynamic post rendering using JS. |
+|  [**coworking space site**](https://github.com/basith-04/js-workbench/tree/main/simple-photo-sharing-webpage-) | a basic coworking space website|
 
 ---
 

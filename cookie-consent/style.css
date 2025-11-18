@@ -9,7 +9,6 @@ html, body {
     color: #222;
 }
 
-/* typography */
 
 h1{
     font-size: 48px;
@@ -51,8 +50,6 @@ li{
 .li-blue{background-color:#E5F9FE}
 .li-pink{background-color:#FCF1FE}
 
-/* layout */
-
 img{
     width: 100%;
 }
@@ -61,8 +58,6 @@ main{
     width: 400px;
     margin: 0 auto;
 }
-
-/* modal */
   
 .modal {
     display: none;
@@ -89,7 +84,6 @@ main{
     text-align: center;
 }
 
-/* modal buttons */
 
 .close-modal-btn-container{
     text-align: right;
@@ -128,8 +122,6 @@ main{
     cursor: pointer;
 }
 
-/* modal input */
-
 input{
     margin-top: 10px; 
     border: 1px solid #212529;
@@ -138,7 +130,6 @@ input{
     border-radius: 3px;
 }
 
-/* modal after submit */
 
 .loading{
     width: 100%; 

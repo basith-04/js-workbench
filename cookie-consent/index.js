@@ -2,6 +2,8 @@ const modal = document.getElementById('modal')
 const modalCloseBtn = document.getElementById('modal-close-btn')
 const consentForm = document.getElementById('consent-form')
 const modalText = document.getElementById('modal-text')
+const declineBtn = document.getElementById('decline-btn')
+const modalChoiceBtns = document.getElementById('modal-choice-btns')
 
 setTimeout(function(){
     modal.style.display = 'inline'
@@ -9,6 +11,10 @@ setTimeout(function(){
 
 modalCloseBtn.addEventListener('click', function(){
     modal.style.display = 'none'
+})
+
+declineBtn.addEventListener('mouseenter', function(){
+    modalChoiceBtns.classList.toggle('modal-choice-btns-reverse')
 })
 
 consentForm.addEventListener('submit', function(e){
@@ -28,7 +34,7 @@ consentForm.addEventListener('submit', function(e){
         Making the sale...`
     }, 1500)
     
-
+    
     setTimeout(function(){
         document.getElementById('modal-inner').innerHTML = `
         <h2>Thanks <span class="modal-display-name">${fullName}</span>, you sucker! </h2>

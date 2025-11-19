@@ -1,0 +1,38 @@
+header{
+    background-color: #67595E;
+    height: 90px;
+    color: #EED6D3;
+    font-weight: bold;
+}
+body{
+    margin: 0;
+    font-family: "Karla";
+}
+h2{
+    font-size: 16px;
+    margin-top: 0px;
+    padding-top: 19px;
+    margin-bottom: 0;
+    font-weight: 800;
+    margin-left: 10px;
+    display: inline-block;
+    
+}
+h1{
+    margin-top: 0;
+    font-size: 28px;
+    font-weight: 720;
+     display: inline-block;
+}
+img{
+    width: 80px;
+    padding-right: 10px;
+    float: left;
+}
+.head-div{
+    
+    width: 300px;
+    margin:0 auto;
+    
+
+}

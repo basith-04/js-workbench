@@ -1,13 +1,31 @@
-header{
-    background-color: #67595E;
-    height: 90px;
-    color: #EED6D3;
-    font-weight: bold;
-}
+/*Layouts*/
 body{
     margin: 0;
-    font-family: "Karla";
+    font-family: "Karla",serif;
 }
+header{
+    background-color: #67595E;
+    
+    color: #EED6D3;
+    font-weight: bold;
+    height: 85px;
+}
+.head-div{
+    
+    width: 300px;
+    margin:0 auto;
+    
+
+}
+.container{
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+/*typography*/
+
 h2{
     font-size: 16px;
     margin-top: 0px;
@@ -18,21 +36,28 @@ h2{
     display: inline-block;
     
 }
+
 h1{
     margin-top: 0;
     font-size: 28px;
     font-weight: 720;
      display: inline-block;
+     margin-bottom: 0;
 }
 img{
     width: 80px;
     padding-right: 10px;
     float: left;
 }
-.head-div{
-    
-    width: 300px;
-    margin:0 auto;
-    
 
+label{
+    
+}
+button{
+    background-color: #67595E;
+    color: #eed6d3;
+    margin-top: 20px;
+    border: none;
+    padding:10px 25px;
+    border-radius: 4px;
 }

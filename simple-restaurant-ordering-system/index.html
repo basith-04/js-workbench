@@ -1,9 +1,58 @@
 <html>
-    <head>
-       <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-	<script src="index.js"></script>
-    </body>
-</html>
 
+<head>
+    <link rel="stylesheet" href="index.css">
+    <!-- font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Basith's Diner</h1>
+        <h2>The Worst burgers and pizzas in town.</h2>
+    </header>
+    <main>
+        <ul id="menu-div">
+            <!-- menus should be rendered here -->
+            <li class="item">
+                <div class="item-img">
+                    🍔
+                </div>
+                <div class="item-description">
+                    <ul>
+                        <li>
+                            <h2 >Hamburger</h2>
+                        </li>
+                        <li>
+                            <h4>beef,cheese,lettuce</h4>
+                        </li>
+                        <li>
+                            <h3>$12</h3>
+                        </li>
+                    </ul>                                                       
+                </div>
+                <button id="add-btn">+</button>
+            </li>
+            <hr>
+            
+
+
+        </ul>
+        <div id="orders-div">
+            <div id="items-orderd">
+                <!-- oreders will be listed here -->
+                
+            </div>
+            <hr>
+            <p>Total Price</p>
+            <button id="complete-btn"> Complete order</button>
+        </div>
+
+        <section></section>
+    </main>
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>

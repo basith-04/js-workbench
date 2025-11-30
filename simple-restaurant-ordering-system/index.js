@@ -1,20 +1,32 @@
 import { menuArray } from './data.js'
-let order=[]
-const menuDiv=document.getElementById("menu-div")
-document.addEventListener("click",function(e){
-    if(e.target.dataset.id)
-    {
-        order.push(menuArray.filter((i)=>{
-            
-            return (i.id===e.target.dataset.id)
+let order = []
+const menuDiv = document.getElementById("menu-div")
+const orderUl = document.getElementById("items-orderd")
+document.addEventListener("click", function (e) {
+    if (e.target.dataset.id) {
+        order.push(menuArray.filter((i) => {
+
+            return (i.id === e.target.dataset.id)
         })[0])
-        console.log(order)
+        
+        renderOrders()
     }
 
 })
+function renderOrders() {
+
+    orderUl.innerHTML = order.map((j) => {
+        
+        return `<li class="order-item">
+                        <h3>${j.name}</h3>
+                        <h4>remove</h4>
+                        <h3>$${j.price}</h3>
+                </li>`
+    }).join("")
+}
 function render() {
-    const menu =menuArray.map((item)=>{
-        const {name,ingredients,id,price,emoji}=item
+    const menu = menuArray.map((item) => {
+        const { name, ingredients, id, price, emoji } = item
         return ` 
         
         <li class="item" id="${id}">
@@ -31,7 +43,7 @@ function render() {
                             </h4>
                         </li>
                         <li>
-                            <h3>${price}</h3>
+                            <h3>$${price}</h3>
                         </li>
                     </ul>                                                       
                 </div>
@@ -40,9 +52,9 @@ function render() {
             <hr>
         `
     }).join('')
-    menuDiv.innerHTML=menu
- 
-    
+    menuDiv.innerHTML = menu
+
+
 }
 render()
 

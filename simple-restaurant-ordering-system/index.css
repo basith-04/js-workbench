@@ -80,7 +80,11 @@ hr {
     margin: 10px 25px;
 
 }
+.order-item{
+    display: flex;
+    justify-content: space-between;
 
+}
 #menu-div {
     width: 508px;
     height: 400px;
@@ -90,7 +94,7 @@ hr {
 #orders-div {
     width: 508px;
     height: 319px;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     margin: 0 auto;
 }
 
@@ -134,7 +138,7 @@ p {
     font-size: 50px;
     display: inline-block;
     margin: 0;
-    background-color: #16DB99;
+    /* background-color: #16DB99; */
     padding: 0;
 
 }

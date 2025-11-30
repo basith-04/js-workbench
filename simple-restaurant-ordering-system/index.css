@@ -1,3 +1,140 @@
 body {
     margin: 0;
-} 
+    font-family: "Smythe";
+}
+
+header {
+    background-image: url('images/header.jpg');
+    height: 167px;
+    width: 600px;
+    background-size: 600px 167px;
+    color: white;
+
+    font-weight: regular;
+}
+
+h1 {
+    margin-left: 32px;
+    padding-top: 32px;
+    margin-bottom: 5px;
+    font-size: 39px;
+    font-weight: 400;
+
+}
+
+h2 {
+    margin-left: 32px;
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 22.42px;
+    font-weight: 100;
+    display: inline-block;
+}
+
+li h2,
+li h3,
+li h4 {
+    margin: 0;
+    padding: 0;
+}
+
+li h2 {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+li h3 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+li h4 {
+    color: #8B8B8B;
+    font-weight: 100;
+    font-size: 16px;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+    
+    
+
+}
+.item{
+    display: flex;
+    
+
+}
+
+main {
+
+    width: 600px;
+    height: 994px;
+    background-color: antiquewhite;
+}
+
+hr {
+    
+    border: 1px solid#DEDEDE;
+    margin: 10px 25px;
+
+}
+
+#menu-div {
+    width: 508px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+#orders-div {
+    width: 508px;
+    height: 319px;
+    background-color: aliceblue;
+    margin: 0 auto;
+}
+
+#complete-btn {
+    background-color: #16DB99;
+    border: none;
+    width: 508px;
+    height: 60px;
+}
+.item-description{
+    display: inline-block;  padding-top: 15px; margin-left: 15px;
+}
+li h2{
+    margin-left: 0;
+}
+#add-btn {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    font-size: 22px;
+    border: 1px solid #DEDEDE;
+    color: #3C3C3C;
+    font-weight: 100;
+    vertical-align: top;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    
+}
+.item-img{
+    font-size:60px;display: inline-block;  vertical-align: top;
+}
+p {
+    font-size: 50px;
+    display: inline-block;
+    margin: 0;
+    background-color: #16DB99;
+    padding: 0;
+
+}

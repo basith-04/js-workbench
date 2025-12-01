@@ -9,17 +9,27 @@ document.addEventListener("click", function (e) {
             return (i.id === e.target.dataset.id)
         })[0])
         
-        renderOrders()
+        
     }
+    else if(e.target.dataset.rid){
+        cancelOrder(e.target.dataset.rid)
+    }
+    renderOrders()
 
 })
+function cancelOrder(id){
+    order=order.filter((j)=>{
+        return j.id != id
+    })
+}
 function renderOrders() {
+    
 
     orderUl.innerHTML = order.map((j) => {
         
         return `<li class="order-item">
                         <h3>${j.name}</h3>
-                        <h4>remove</h4>
+                        <h4 data-rid="${j.id}">remove</h4>
                         <h3>$${j.price}</h3>
                 </li>`
     }).join("")

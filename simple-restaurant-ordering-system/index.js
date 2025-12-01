@@ -2,6 +2,7 @@ import { menuArray } from './data.js'
 let order = []
 const menuDiv = document.getElementById("menu-div")
 const orderUl = document.getElementById("items-orderd")
+const totalPrice=document.getElementById("total-price")
 document.addEventListener("click", function (e) {
     if (e.target.dataset.id) {
         order.push(menuArray.filter((i) => {
@@ -10,10 +11,16 @@ document.addEventListener("click", function (e) {
         })[0])
         
         
+        
     }
     else if(e.target.dataset.rid){
         cancelOrder(e.target.dataset.rid)
     }
+     totalPrice.innerHTML=`$${order.reduce((total,curr)=>{
+        return total+curr.price
+    },0)}`
+   
+
     renderOrders()
 
 })

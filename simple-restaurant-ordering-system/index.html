@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <div id="container"> 
     <header>
         <h1>Basith's Diner</h1>
         <h2>The Worst burgers and pizzas in town.</h2>
@@ -16,47 +17,20 @@
     <main>
         <ul id="menu-div">
             <!-- menus should be rendered here -->
-            <li class="item">
-                <div class="item-img">
-                    🍔
-                </div>
-                <div class="item-description">
-                    <ul>
-                        <li>
-                            <h2 >Hamburger</h2>
-                        </li>
-                        <li>
-                            <h4>beef,cheese,lettuce</h4>
-                        </li>
-                        <li>
-                            <h3>$12</h3>
-                        </li>
-                    </ul>                                                       
-                </div>
-                <button id="add-btn">+</button>
-            </li>
-            <hr>
-            
-
-
         </ul>
         <div id="orders-div">
             <h2 style="text-align: center">Your order</h2>
-        
+
                 <ul id="items-orderd">
                      <!-- oreders will be listed here -->
-                    <li class="order-item">
-                        <h3>Pizza</h3><h4>remove</h4><h3>$12</h3>
-                    </li>
                 </ul>
-            
             <hr>
             <div id="total"><p>Total Price</p><p id="total-price">$0</p></div>
             <button id="complete-btn"> Complete order</button>
         </div>
 
-        <section></section>
     </main>
+    </div>
     <div id="modal">
         <h2>Enter card details</h2>
         <input type="text" placeholder="Enter your name">

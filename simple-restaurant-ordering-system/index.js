@@ -1,4 +1,5 @@
 import { menuArray } from './data.js'
+const container=document.getElementById("container")
 let order = []
 const menuDiv = document.getElementById("menu-div")
 const orderUl = document.getElementById("items-orderd")
@@ -18,11 +19,14 @@ document.addEventListener("click", function (e) {
         cancelOrder(e.target.dataset.rid)
     }
     else if(e.target.id==="complete-btn"){
-
-        console.log("whhha")
         modal.style.display="inline"
-        
+        container.classList.toggle("blur")
     }
+    else if(modal.style.display=== "inline" && !modal.contains(e.target)){
+    modal.style.display="none"
+     container.classList.toggle("blur")
+}
+
      totalPrice.innerHTML=`$${order.reduce((total,curr)=>{
         return total+curr.price
     },0)}`
@@ -83,9 +87,3 @@ function render() {
 }
 render()
 
-/*    
-
-
-
-
-*/

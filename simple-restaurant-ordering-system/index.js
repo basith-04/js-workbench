@@ -3,6 +3,7 @@ let order = []
 const menuDiv = document.getElementById("menu-div")
 const orderUl = document.getElementById("items-orderd")
 const totalPrice=document.getElementById("total-price")
+const modal=document.getElementById("modal")
 document.addEventListener("click", function (e) {
     if (e.target.dataset.id) {
         order.push(menuArray.filter((i) => {
@@ -16,9 +17,16 @@ document.addEventListener("click", function (e) {
     else if(e.target.dataset.rid){
         cancelOrder(e.target.dataset.rid)
     }
+    else if(e.target.id==="complete-btn"){
+
+        console.log("whhha")
+        modal.style.display="inline"
+        
+    }
      totalPrice.innerHTML=`$${order.reduce((total,curr)=>{
         return total+curr.price
     },0)}`
+    
    
 
     renderOrders()

@@ -58,7 +58,11 @@
         <section></section>
     </main>
     <div id="modal">
-        
+        <h2>Enter card details</h2>
+        <input type="text" placeholder="Enter your name">
+        <input type="text" inputmode="numeric" placeholder="Enter card number" pattern="\d*" maxlength="12" minlength="12" >
+        <input type="text" inputmode="numeric" placeholder="Enter CVV" pattern="\d*" maxlength="3" minlength="3">
+        <button class="pay-button"> Pay</button>
     </div>
     <script src="index.js" type="module"></script>
 </body>

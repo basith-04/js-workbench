@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: "Smythe";
+    
 }
 
 header {
@@ -11,6 +12,7 @@ header {
     color: white;
 
     font-weight: regular;
+    margin: 0 auto;
 }
 
 h1 {
@@ -72,6 +74,8 @@ main {
     width: 600px;
     height: 994px;
     background-color: antiquewhite;
+    margin: 0 auto;
+    
 }
 
 hr {
@@ -147,6 +151,36 @@ p {
     justify-content: space-between;
 }
 #modal{
-    width:
-    542.
+    width: 450px;
+    height: 440px;
+    background-color: white;
+    text-align: center;
+    padding-top: 35px;
+     display: none;
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1000;
+}
+input,.pay-button{
+    width: 400px;
+    height: 71px;
+    margin-top: 10px;
+    border: 1.3px solid #757575;
+    border-radius: 4px;
+    font-family: "Vedana";
+    font-weight: 400;
+    font-style: regualr;
+    font-size: 20px;
+    color: #757575;
+}
+.pay-button{
+   border: none;
+   background-color: #16DB99;
+   margin-top: 30px;
+   font-weight: 700;
+   color: white;
 }

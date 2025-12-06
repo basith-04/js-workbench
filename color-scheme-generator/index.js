@@ -11,6 +11,21 @@ getBtn.addEventListener('click', async () => {
 
     console.log(colorPicker.value)
     console.log(schemeSelect.value)
+    let htmlString = '';
+    smth.forEach(element => {
+        htmlString += ` <div class="col">
+                <div class="color-box" style="background-color: ${element};">
+
+                </div>
+                <div class="color-hexa">
+                    ${element}
+                </div>
+
+            </div>`
+
+    });
+
+    colorScheme.innerHTML = htmlString;
 });
 async function getColorScheme() {
     try {
@@ -22,8 +37,6 @@ async function getColorScheme() {
             throw new Error('Network response was not ok');
         }
         const data = await response.json();
-
-        console.log(data.colors[0].hex.value);
         return data.colors.map(col=>{ return col.hex.value})
     } catch (error) {
         console.error('There has been a problem with your fetch operation:', error);

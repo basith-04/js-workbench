@@ -12,11 +12,6 @@ colorScheme.addEventListener('click', (e) => {
 getBtn.addEventListener('click', async () => {
 
     const smth = await getColorScheme()
-    console.log(smth)
-
-
-    console.log(colorPicker.value)
-    console.log(schemeSelect.value)
     let htmlString = '';
     smth.forEach(element => {
         htmlString += ` <div class="col" data-color="${element}">

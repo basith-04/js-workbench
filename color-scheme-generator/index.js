@@ -2,10 +2,16 @@ const getBtn = document.getElementById('get-btn');
 const colorScheme = document.getElementById('color-scheme');
 const colorPicker = document.getElementById('color-picker');
 const schemeSelect = document.getElementById('scheme-select');
+colorScheme.addEventListener('click', (e) => {
 
+    navigator.clipboard.writeText(e.target.closest(".col").dataset.color);
+    alert("Copied the text: " + e.target.closest(".col").dataset.color);
+
+
+})
 getBtn.addEventListener('click', async () => {
 
-    const smth= await getColorScheme()
+    const smth = await getColorScheme()
     console.log(smth)
 
 
@@ -13,7 +19,7 @@ getBtn.addEventListener('click', async () => {
     console.log(schemeSelect.value)
     let htmlString = '';
     smth.forEach(element => {
-        htmlString += ` <div class="col">
+        htmlString += ` <div class="col" data-color="${element}">
                 <div class="color-box" style="background-color: ${element};">
 
                 </div>
@@ -37,7 +43,7 @@ async function getColorScheme() {
             throw new Error('Network response was not ok');
         }
         const data = await response.json();
-        return data.colors.map(col=>{ return col.hex.value})
+        return data.colors.map(col => { return col.hex.value })
     } catch (error) {
         console.error('There has been a problem with your fetch operation:', error);
     }

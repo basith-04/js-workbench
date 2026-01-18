@@ -1,0 +1,28 @@
+{
+  "name": "backend-intro",
+  "version": "1.0.0",
+  "description": "tutorial",
+  "homepage": "https://github.com/basith-04/js-workbench#readme",
+  "bugs": {
+    "url": "https://github.com/basith-04/js-workbench/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/basith-04/js-workbench.git"
+  },
+  "license": "ISC",
+  "author": "basith",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/src/index.js",
+    "dev": "nodemon backend/src/index.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "mongoose": "^9.1.4",
+    "nodeman": "^1.1.2",
+    "nodemon": "^3.1.11"
+  }
+}
